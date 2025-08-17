@@ -38,8 +38,27 @@ sessionStorage.removeItem("clave");
 //clear: Limpia todo el contenido del storage
 sessionStorage.clear();
 
-//GUARDANDO OBJETOS
-//Primero lo comvertimos a JSON, el formato comprendido por el storage
-//Los métodos del objeto JSON que nos provee Javascript son
-//JSON.stringify()
-//JSON parse
+// GUARDANDO OBJETOS
+// Primero lo comvertimos a JSON, el formato comprendido por el storage
+// Los métodos del objeto JSON que nos provee Javascript son
+// JSON.stringify()
+// JSON.parse()
+const alfajores = [
+    {
+        id: 0,
+        marca: "Agila",
+        descripción: "Alfajor minitorta clasica",
+        precio: 100,
+        img: "./img/agilaclasica.jpg",
+    },
+    {
+        id: 1,
+        marca: "Milka",
+        descripción: "Alfajor con mouse de chocolate",
+        precio: 90,
+        img: "./img/milka mouse.jpg",
+    },
+];
+
+alfajoresJSON = JSON.stringify("alfajores")
+localStorage("alfajores", alfajores)
