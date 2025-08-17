@@ -22,3 +22,24 @@ localStorage.removeItem("clave");
 
 //clear: limpia todo el contenido del storage
 localStorage.clear();
+
+
+/*** SESSION STORAGE ***/
+
+// setItem: guarda un valor asociado a una clave en el storage
+sessionStorage.setItem("clave", valor);
+
+//getItem: recupera un valor asociado a una clave en el storage
+sessionStorage.getItem("clave");
+
+//removeItem: elimina una clave
+sessionStorage.removeItem("clave");
+
+//clear: Limpia todo el contenido del storage
+sessionStorage.clear();
+
+//GUARDANDO OBJETOS
+//Primero lo comvertimos a JSON, el formato comprendido por el storage
+//Los métodos del objeto JSON que nos provee Javascript son
+//JSON.stringify()
+//JSON parse
